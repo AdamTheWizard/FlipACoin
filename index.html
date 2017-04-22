@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>Flip - A - Coin</title>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+        
+        <!!fonts!>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+
+
+        
+        <style type="text/css">
+        
+            body {
+                background-color:#ffffff;
+                font-family: 'Raleway', sans-serif;
+                overflow-x: hidden;
+                
+
+            }
+            #polkaDots {
+                background-image: url("https://www.xmple.com/wallpaper/white-polka-dots-hexagon-orange-3840x2160-c2-ffffff-ff7f50-l2-176-308-a-20-f-4.svg");
+                background-size: cover;
+                border-bottom:5px solid black;
+            }
+            
+            #pee {
+                font-family: 'Pacifico', cursive;
+                line-height:1em;
+                margin-top:0.5em;
+                font-size:800%;
+                font-weight: 800;
+                color:#292B2C;
+            }
+            
+            hr {
+                border-bottom:1px solid black;
+                box-shadow: 2px 2px 9px black;
+            }
+            
+            #smallPee {
+                font-size:150%;
+            }
+            
+            #downArrowRow {
+                position:relative;
+                
+            }
+            #downArrowDiv {
+                opacity:0.1;
+                position: absolute;
+                bottom:0;
+            }
+            
+            #orangeContainer {
+                border-radius: 10px;
+            }
+            
+                        
+            
+            #coins {
+                background-image: url("https://i1.wp.com/www.thecollegejuice.com/wp-content/uploads/2011/06/heads-or-tails.jpg");
+                background-position: left;
+                border-radius: 50%;
+                opacity:0;
+                margin-bottom:-4em;
+            }
+            
+            #clickToFlip {
+                margin-top:2em;
+                margin-bottom: 1em;
+                border-color: #FF7F50;
+            }
+
+            #pee2 {
+                color:black;
+            }
+            
+            #results {
+                color:#FF7F50;
+                opacity:0;
+            }
+
+
+        
+        </style>
+
+        
+
+    </head>
+    
+    <body id="body">
+    
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <a class="navbar-brand" href="#">flip-<span style="color:#FF7F50">A</span>-coin</a>
+            
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Social media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+        
+        <div class="container-fluid" id="polkaDots">
+            <div class="row">
+                
+                <div class="col-1"></div>
+                <div class="col-10 text-center">
+                    
+                    <p id="pee">Feelin' Lucky?</p>
+                                                        
+                    <hr>
+                    
+                    <p id="smallPee" class="text-center col-12">Take A Chance</p>
+                </div>
+                
+                <div class="col-1"></div>
+                
+                <div class="col-12 text-center">
+                
+                    <p class="lead"></p>
+                
+                </div>
+                
+                
+            </div>
+            <div id="downArrowRow" class="row">
+                <div id="downArrowDiv" class="col-12 text-center">
+                    <p class="small">Follow Me</p>
+                    <img src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png" id="downArrow">
+                </div>
+            </div>
+                        
+            </div>
+        
+        <div class="container-fluid">
+        
+            <div class="row">
+                <div class="col-12 text-center" style="padding-top:2em">
+                
+                    <p class="lead text-center">Need To Make A Choice?</p>
+                    
+                </div>
+                <div class="col-12">
+                
+                    <p class="text-center">When faced with two difficult choices, simply toss a coin. I recommend this because I've found that it really does work. Not only does it work because it settles the question for you, it works because during that brief moment when the coin is flipping through the air, you suddenly know exactly what it is you're hoping for. </p>
+                
+                </div>
+                
+                <div class="flipImg col-12 text-center">
+                <hr>
+                    <img src="https://68.media.tumblr.com/052f762c992c1ccafb6ef0cfad2e119a/tumblr_inline_o06fqzxATp1srob4n_540.gif">
+                    <hr>
+                
+                </div>
+                
+                <div class="container-fluid">
+                    
+                    <p class="text-center" style="margin-top:1em">Why Do We Flip Coins?</p>
+                    
+                    <p class=" lead text-center">Coin flipping, coin tossing, or heads or tails is the practice of throwing a coin in the air to choose between two alternatives, sometimes to resolve a dispute between two parties. It is a form of sortition which inherently has only two possible and equally likely outcomes.</p>
+                    
+                    <p class="text-center" id="orangeContainer" style="background-color:#FF7F50">During a coin toss, the coin is thrown into the air such that it rotates edge-over-edge several times. Either beforehand or when the coin is in the air, an interested party calls "heads" or "tails", indicating which side of the coin that party is choosing. The other party is assigned the opposite side. Depending on custom, the coin may be caught; caught and inverted; or allowed to land on the ground. When the coin comes to rest, the toss is complete and the party who called correctly or was assigned the upper side is declared the winner.</p>
+                    
+                    <p class="text-center"> It is possible for a coin to land on its edge, usually by landing up against an object (such as a shoe) or by getting stuck in the ground (as famously happened during the December 8, 2013 NFL match up between the Philadelphia Eagles and Detroit Lions, which took place during a heavy snowstorm). However, even on a flat surface it is possible for a coin to land on its edge, with a chance of about 1 in 6000. Angular momentum typically prevents most coins from landing on their edges unsupported if flipped. Such cases in which a coin does land on its edge are exceptionally rare and in most cases the coin is simply re-flipped.</p>
+                    
+                    <hr>
+                
+            </div>
+                
+                <div class="container-fluid">
+                            
+                    <div class="row">
+                        
+                        <div class="col-12 text-center">
+                        
+                            <p id="clickToFlip" class="btn btn-secondary lead">Click to Flip a coin!</p>
+                            
+                        </div>
+                        
+                        <div id="coins" class="col-12 text-center">
+                        
+                            
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        
+                            <p class="lead" id="pee2">It was:<span id="results"></span></p>
+                        
+                            
+                        </div>
+                </div>
+
+        
+         
+         
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            
+            
+            function animateArrow() {
+                
+                var x = $(window).height()
+                                
+                if (x <= 600){
+                    
+                    $("#downArrowDiv").animate({top:"5em", opacity:"1"}, 1000, function() {
+                            
+                        $(this).animate({top:"0em", opacity:"0.1"}, 1000);
+                    });
+                    
+                } else if (x >= 600 && x <= 900) {
+                    
+                        $("#downArrowDiv").animate({top:"10em", opacity:"1"}, 1000, function() {
+                            
+                            $(this).animate({top:"0em", opacity:"0.1"}, 1000);
+                            
+                        });
+                    
+                } else if (x >= 900) {
+                    
+                    $("#downArrowDiv").animate({top:"13em", opacity:"1"}, 1000, function() {
+                            
+                        $(this).animate({top:"0em", opacity:"0.1"}, 1000);
+                        
+                    });
+                }
+            };
+            
+            setInterval(animateArrow, 2000);            
+            
+            $(window).ready(function() {
+                
+                $("#coins").height($(window).height() / 2);
+                
+                $("#polkaDots").height($(window).height() - $("nav").height() - 20);
+                                
+                if ($(window).width() >= 500) {
+                    
+                    $("#pee").css("margin-top", "1em");
+                    
+                    $("#pee").css("font-size", "600%");
+                 
+                } else {
+                    
+                    $("#pee").css("margin-top", "0.75em");
+                    
+                    $("#pee").css("font-size", "450%");   
+                }
+            });
+            
+            $(window).resize(function() {
+                
+                $("#coins").height($(window).height() / 4);
+                
+                $("#polkaDots").height($(window).height() - $("nav").height() - 20);
+                
+                if ($(window).width() >= 760) {
+                    
+                    $("#pee").css("margin-top", "1em");
+                    
+                    $("#pee").css("font-size", "600%");
+                
+                } else {
+                    
+                    $("#pee").css("margin-top", "0.75em");
+                    
+                    $("#pee").css("font-size", "450%");
+                }
+            });
+            
+            /*Click to Flip Circle*/
+            $("#clickToFlip").click(function() {
+                
+                var flipResult = Math.floor(Math.random() * 1000);
+                
+                if (flipResult >= 500) {
+                    
+                    $("#coins").css("background-position", "left")
+                        
+                        $("#results").html(" Heads!");
+                    
+                    $("#coins").animate({opacity:"1"},2000);
+                    
+                    $("#results").animate({opacity:"1"},2000, function() {
+                        
+                        $("#coins").animate({opacity:"0"}, 3000);
+                        
+                        $("#results").animate({opacity:"0"}, 3000);
+                        
+                    });
+                    
+                    
+                    
+                    
+                } else {
+                    
+                    $("#coins").css("background-position", "right");
+                    
+                    $("#results").html(" Tails!");
+                    
+                    $("#coins").animate({opacity:"1"},2000);
+                    
+                    $("#results").animate({opacity:"1"},2000, function() {
+                        
+                        $("#coins").animate({opacity:"0"},3000);
+                        
+                        $("#results").animate({opacity:"0"},3000);
+                        
+                        
+                        
+                    });
+                }
+                
+                
+            });
+                
+            
+            
+            
+           
+        
+        </script>
+        
+    </body>
+
+
+</html>
