@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
         
-        <!!fonts!>
+        /*fonts*/
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -27,7 +27,6 @@
                 font-family: 'Raleway', sans-serif;
                 overflow-x: hidden;
                 
-
             }
             #polkaDots {
                 background-image: url("https://www.xmple.com/wallpaper/white-polka-dots-hexagon-orange-3840x2160-c2-ffffff-ff7f50-l2-176-308-a-20-f-4.svg");
@@ -83,7 +82,6 @@
                 margin-bottom: 2em;
                 border-color: #FF7F50;
             }
-
             #pee2 {
                 color:black;
             }
@@ -108,10 +106,9 @@
             #message {
                 background-color:#FF7F50;
             }
-
             #footerRow {
                 background-color:#292B2C;
-                height:4em;
+                height:5em;
                 margin-top:0.5em;
             }
             
@@ -119,9 +116,13 @@
                 font-size:200%;
                 margin-top:0.5em;
                 color:white;
-                text-shadow:1px 1px 1px #FF7F50;
+                filter: drop-shadow(0px 0px 1px #ff7f50);
             }
-
+            
+            #createdBy {
+                color:white;
+            }
+            
         
         </style>
 
@@ -144,10 +145,10 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Social media</a>
+        <a class="nav-link" href="https://www.twitter.com/adamthewizard" target="_blank">Social media</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#bottom">Contact</a>
       </li>
     </ul>
     
@@ -251,7 +252,7 @@
                 
                 <div class="col-12">
                             
-                    <form>
+                    <form action="mailto:AdamTheWizard@hotmail.com" method="post" enctype="text/plain">
                         <hr>
                         <div class="form-group row">
                         
@@ -259,7 +260,7 @@
                         
                             <label for="emailInput" class="col-12 col-sm-2 col-md-4 col-lg-3">Name</label>
                         
-                            <input type="email" id="emailInput" class="form-control col-12 col-sm-10 col-md-8 col-lg-6" placeholder="Full name / Twitter handle">
+                            <input type="text" id="emailInput" class="form-control col-12 col-sm-10 col-md-8 col-lg-6" placeholder="Full name / Twitter handle">
                         
                             <span class="messageSpacing col-lg-3"></span>
                         </div>
@@ -283,6 +284,10 @@
                             <p class="col-12 col-sm-2 col-md-4 col-lg-4"></p>
                             <button id="messageButton" type="submit" class="btn btn-secondary col-12 col-sm-10 col-md-8 col-lg-4">Send</button>
                             <span class="messageSpacing col-lg-4"></span>
+                            
+                            <p class="col-12 col-sm-2 col-md-4 col-lg-4"></p>
+                            <button id="messageButton" type="reset" class="btn btn-danger col-12 col-sm-10 col-md-8 col-lg-4">Reset</button>
+                            <span class="messageSpacing col-lg-4"></span>
                         </div>
                     </form>
                 </div>
@@ -293,30 +298,35 @@
                 
                 
                     <div class="col-3 text-center">
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.twitter.com/adamthewizard" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>
                     
                     <div class="col-3 text-center">
-                        <a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>
+                        <a href="https://www.codepen.io/adamthewizard" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>
 
                         </a>
                     </div>
                     
                     <div class="col-3 text-center">
-                        <a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i>
+                        <a href="https://github.com/AdamTheWizard" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i>
 
                         </a>
                     </div>
                     
                     <div class="col-3 text-center">
-                        <a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                        <a href="https://www.freecodecamp.com/AdamTheWizard/" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i>
 
                         </a>
                     </div>
                 
-                
+                <div class="col-12 text-center">
+                    
+                    <p id="createdBy">Created With Magic @AdamTheWizard</p>
+                </div>
             </div>
+            
+            <a name="bottom"></a>
 
         
          
